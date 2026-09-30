@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Allow: /google2a240f59b85b8a55.html
+Allow: /sitemap.xml
+
+Sitemap: https://www.drhebaezz.com/sitemap.xml

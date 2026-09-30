@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.drhebaezz.com/ar/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.drhebaezz.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.drhebaezz.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drhebaezz.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://www.drhebaezz.com/en/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.drhebaezz.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.drhebaezz.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drhebaezz.com/ar/"/>
+  </url>
+  <url>
+    <loc>https://www.drhebaezz.com/ar/services/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.drhebaezz.com/ar/services/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.drhebaezz.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drhebaezz.com/ar/services/"/>
+  </url>
+  <url>
+    <loc>https://www.drhebaezz.com/en/services/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.drhebaezz.com/ar/services/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.drhebaezz.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drhebaezz.com/ar/services/"/>
+  </url>
+  <url>
+    <loc>https://www.drhebaezz.com/ar/resources/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.drhebaezz.com/ar/resources/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.drhebaezz.com/en/resources/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drhebaezz.com/ar/resources/"/>
+  </url>
+  <url>
+    <loc>https://www.drhebaezz.com/en/resources/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.drhebaezz.com/ar/resources/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.drhebaezz.com/en/resources/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drhebaezz.com/ar/resources/"/>
+  </url>
+</urlset>
