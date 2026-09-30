@@ -838,19 +838,100 @@ html[dir="rtl"] .reason:hover { transform: translateX(-4px); }
 }
 
 .footer {
-  padding: 2.6rem 0 6rem;
-  border-top: 1px solid var(--line);
+  margin-top: 1rem;
+  padding: 0 0 5.5rem;
   color: var(--muted);
-  font-size: 1.02rem;
+  font-size: 1rem;
+  background:
+    linear-gradient(180deg, transparent, rgba(79, 111, 98, 0.05) 2.5rem),
+    var(--bg);
+  border-top: 1px solid var(--line);
 }
-.footer strong {
-  color: var(--ink);
+
+.footer-grid {
+  display: grid;
+  gap: 2rem 2.4rem;
+  padding: 2.8rem 0 2.2rem;
+}
+
+@media (min-width: 720px) {
+  .footer-grid { grid-template-columns: 1.3fr 1fr; }
+}
+
+@media (min-width: 980px) {
+  .footer-grid { grid-template-columns: 1.45fr 0.8fr 1fr 1fr; align-items: start; }
+}
+
+.footer-brand strong {
   display: block;
-  margin-bottom: 0.25rem;
-  font-size: 1.18rem;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
 }
-.footer a { color: var(--accent); font-weight: 650; text-decoration: none; }
-.footer .ps { margin-top: 1rem; font-size: 0.9rem; opacity: 0.85; }
+
+.footer-brand p {
+  margin: 0;
+  max-width: 22rem;
+  line-height: 1.7;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+}
+
+.footer-label {
+  margin: 0 0 0.25rem;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+html[lang="ar"] .footer-label { letter-spacing: 0.03em; }
+
+.footer-col a,
+.footer-col p {
+  margin: 0;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-col a {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover,
+.footer-bar a:hover { color: var(--accent-deep); }
+
+.footer-bar {
+  border-top: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.55);
+}
+
+.footer-bar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.6rem 1.2rem;
+  padding: 1rem 0 1.15rem;
+  font-size: 0.92rem;
+}
+
+.footer-bar a {
+  color: var(--accent);
+  font-weight: 650;
+  text-decoration: none;
+}
 
 .wa {
   position: fixed;
