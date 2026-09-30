@@ -19,6 +19,44 @@
   window.addEventListener("scroll", onScroll, { passive: true });
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const hasViewTransition = "startViewTransition" in document;
+  if (hasViewTransition) document.documentElement.classList.add("has-vt");
+
+  const navKind = sessionStorage.getItem("page-nav");
+  if (navKind) {
+    document.documentElement.dataset.nav = navKind;
+    sessionStorage.removeItem("page-nav");
+  }
+
+  document.addEventListener("click", (event) => {
+    if (reduceMotion || event.defaultPrevented || event.button !== 0) return;
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest("a[href]");
+    if (!link || link.target === "_blank" || link.hasAttribute("download")) return;
+    let url;
+    try {
+      url = new URL(link.href, location.href);
+    } catch {
+      return;
+    }
+    if (url.origin !== location.origin) return;
+    if (url.pathname === location.pathname && url.search === location.search) return;
+
+    const kind = link.closest(".lang-switch") ? "lang" : "page";
+    sessionStorage.setItem("page-nav", kind);
+    document.documentElement.dataset.nav = kind;
+    if (hasViewTransition) return;
+
+    event.preventDefault();
+    document.documentElement.classList.add("is-leaving");
+    window.setTimeout(() => {
+      location.href = url.href;
+    }, kind === "lang" ? 200 : 160);
+  });
+
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) document.documentElement.classList.remove("is-leaving");
+  });
   const revealEls = document.querySelectorAll(
     ".moment, .signs, .split, .svc, .clinic, .reason, .faq details, .cta, .service-block"
   );
